@@ -1,0 +1,124 @@
+<!-- 修改密码 -->
+	<form action="" class="popupForm layer_pLh47" id="changePwd_submit">
+		<div class="row layer_p">
+			<label class="col-xs-12 col-sm-2">旧密码</label>
+			<div class="col-xs-12 col-sm-10">
+				<input  id="changePwdOld" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-xs-12 col-sm-2">新密码</label>
+			<div class="col-xs-12 col-sm-10">
+				<input  id="changePwdNew1" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-xs-12 col-sm-2">确认密码</label>
+			<div class="col-xs-12 col-sm-10">
+				<input  id="changePwdNew2" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div class="col-xs-12 text-right">
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="changePwdBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+
+
+<!-- 服务评价 -->
+	<form action="" class="popupForm layer_pLh47" id="addOrderEvaluate_submit">
+<!-- 		<div class="row layer_p">
+			<label class="col-xs-12 col-sm-2">评分</label>
+			<div class="col-xs-12 col-sm-10">
+				<input  id="addOrderEvaluate_score" class="clear-type-number" min="0" max="100" type="number" placeholder="请输入0~100的整数" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>  -->
+<!-- 		<div class="row layer_p">
+			<label class="col-xs-3 col-sm-2">满意度</label>
+			<div class="col-xs-9 col-sm-10 addOrderEvaluate_satification layer_pCheckbox1">
+				<ul>
+					<li>
+						<input type="radio" name="addOrderEvaluate_satification" value="VeryGood"  id="addOrderEvaluate_satification1">
+						<label for="addOrderEvaluate_satification1"><i class="fa fa-circle-o"></i>很满意</label></li>
+					<li><input type="radio" name="addOrderEvaluate_satification" value="Good" id="addOrderEvaluate_satification2"><label for="addOrderEvaluate_satification2"><i class="fa fa-circle-o"></i>满意</label></li>
+					<li><input type="radio" name="addOrderEvaluate_satification" value="Normal" id="addOrderEvaluate_satification3"><label for="addOrderEvaluate_satification3"><i class="fa fa-circle-o"></i>一般</label></li>
+					<li><input type="radio" name="addOrderEvaluate_satification" value="Bad" id="addOrderEvaluate_satification4"><label for="addOrderEvaluate_satification4"><i class="fa fa-circle-o"></i>差</label></li>
+				</ul>
+			</div>
+		</div> -->
+
+		<div class="row layer_p">
+			<label class="col-xs-3 col-sm-2">沟通</label>
+			<div class="col-xs-9 col-sm-10">
+				<ul class="addOrderEvaluate_commScore evaluate-star" data-score="0">
+					<li class="fa fa-star-o"><a href="javascript:;" data-value="1"></a><a href="javascript:;" data-value="2"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="3"></a><a href="javascript:;" data-value="4"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="5"></a><a href="javascript:;" data-value="6"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="7"></a><a href="javascript:;" data-value="8"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="9"></a><a href="javascript:;" data-value="10"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-xs-3 col-sm-2">专业</label>
+			<div class="col-xs-9 col-sm-10">
+				<ul class="addOrderEvaluate_expertScore evaluate-star" data-score="0">
+					<li class="fa fa-star-o"><a href="javascript:;" data-value="1"></a><a href="javascript:;" data-value="2"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="3"></a><a href="javascript:;" data-value="4"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="5"></a><a href="javascript:;" data-value="6"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="7"></a><a href="javascript:;" data-value="8"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="9"></a><a href="javascript:;" data-value="10"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-xs-3 col-sm-2">仪态</label>
+			<div class="col-xs-9 col-sm-10">
+				<ul class="addOrderEvaluate_mannerScore evaluate-star" data-score="0">
+					<li class="fa fa-star-o"><a href="javascript:;" data-value="1"></a><a href="javascript:;" data-value="2"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="3"></a><a href="javascript:;" data-value="4"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="5"></a><a href="javascript:;" data-value="6"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="7"></a><a href="javascript:;" data-value="8"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="9"></a><a href="javascript:;" data-value="10"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-xs-3 col-sm-2">进度</label>
+			<div class="col-xs-9 col-sm-10">
+				<ul class="addOrderEvaluate_progressScore evaluate-star" data-score="0">
+					<li class="fa fa-star-o"><a href="javascript:;" data-value="1"></a><a href="javascript:;" data-value="2"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="3"></a><a href="javascript:;" data-value="4"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="5"></a><a href="javascript:;" data-value="6"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="7"></a><a href="javascript:;" data-value="8"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="9"></a><a href="javascript:;" data-value="10"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-xs-3 col-sm-2">文件</label>
+			<div class="col-xs-9 col-sm-10">
+				<ul class="addOrderEvaluate_fileScore evaluate-star" data-score="0">
+					<li class="fa fa-star-o"><a href="javascript:;" data-value="1"></a><a href="javascript:;" data-value="2"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="3"></a><a href="javascript:;" data-value="4"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="5"></a><a href="javascript:;" data-value="6"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="7"></a><a href="javascript:;" data-value="8"></a></li>
+	        <li class="fa fa-star-o"><a href="javascript:;" data-value="9"></a><a href="javascript:;" data-value="10"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p md12">
+			<label class="col-xs-3 col-sm-2">评价</label>
+			<div class="col-xs-9 col-sm-10">
+				<textarea id="addOrderEvaluate_comment" cols="50" rows="5" placeholder="请输入评价" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div class="col-xs-12 text-right">
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="addOrderEvaluateSubBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>

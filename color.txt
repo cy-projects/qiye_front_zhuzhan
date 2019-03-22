@@ -1,0 +1,54 @@
+﻿蓝色 #1f6cc4
+红色 #C70012
+绿色 #008000
+黄色 #f2aa2a、
+橙色 #ff6600  #FFA500	255,165,0
+
+主体颜色：
+红： #c81623  rgb(200,22,35)	btn-danger: #d9534f  rgb(217,83,79)
+top灰： #f6f6f6
+
+state:  
+	草稿    Draft	灰	#808080	128,128,128					
+	未确认	黄	#FFFF00	255,255,0	
+	已确认	浅蓝	#00aeef	0,174,239	蓝
+
+	支付中	 蓝	#337ab7	51,122,183	深蓝
+	支付成功 绿	#008000	0,128,0
+	支付失败 红	#c81623  rgb(200,22,35)主题红
+
+	退款中	黄	#FFFF00	255,255,0
+	已退款	红	#c81623  rgb(200,22,35)主题红	
+
+a {
+    color: #428bca;
+    text-decoration: none
+}
+
+a:hover,a:focus {
+    color: #2a6496;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+
+主题绿 #056839  5,104,57
+iSO14000绿  #2c9a42 44,154,66
+
+主题黄 #fcb040   252 176 64
+重黄 #a35015
+ 
+主题蓝： #0f87f7   15,135,247
+
+
+蓝iso9001   #271675  39,22,117
+蓝ohsas18000  #0c2e60 12,46,96
+
+about地址 #323232  50,50,50
+about联系 #82c30c  130,195,12
+about合作 #0a5ac7  10,90,199

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>精雀体系</title>
+
+<!--CSS引用文件-->
+	<link type="image/x-icon" rel="icon" href="favic.ico">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css?v5">
+	<link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.min.css?v5">
+	<!-- <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-datetimepicker.min.css?v5">	 -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.min.css?v5">
+	<link rel="stylesheet" href="plugins/layer/skin/layer.css?v5">
+	<link rel="stylesheet" href="css/layerBase.css?v5">
+	<link rel="stylesheet" href="css/base.css?v5">
+	<!-- <link rel="stylesheet" href="css/index.css?v5"> -->
+	<link rel="stylesheet" href="css/login.css?v5">
+
+
+	
+<!--JS引用文件-->
+	<script src="js/utils.js?v5"></script>
+	<script type="text/javascript">
+		bugStorage.delItem("token");
+		// platform();
+		// window.boss_token = bugStorage.getItem('boss_token');
+  //       if(boss_token == null){
+  //       	window.location.href = '/boss/login.html';
+  //       }
+	</script>
+</head>
+<body>
+<div class="mask"></div>
+<div class="wrapper" data-value="login">
+	<!--头部横幅-->
+	<div class="createBanner"></div>
+	<!--登录-->
+	<div class="pd34">
+		<div class="container">
+			<div class="user_box">
+				<form action="" class="loginForm">
+					<div class="row">
+						<div class="col-sm-12 pd34">
+							<em class="userTitle">登录</em>
+							<span class="pd44 fs12 va-b">
+								还没有账号？
+								<a href="./register.html">免费注册</a>
+							</span>
+						</div>
+						<div class="col-sm-12">
+							<div>
+								<label class="fw-600">账号</label>
+							</div>
+							<div class="userIptBox">
+								<input type="text" class="loginPhone" placeholder="手机号" autocomplete="off">
+								<span class="loginPhoneTip">
+									<!-- <i class="fa fa-times-circle"></i>格式错误 -->
+								</span>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="md12">
+								<label class="fw-600">密码</label>
+								<a href="javascript:void(0);" class="phoneMsPopupBtn forgetPwdBtn">忘记密码</a>
+							</div>
+							<div class="userIptBox">
+								<input type="password" class="loginPwd" placeholder="" autocomplete="off">
+								<span class="loginPwdTip">
+									<!-- <i class="fa fa-times-circle"></i>格式错误 -->
+								</span>
+
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="md12">
+								<label class="fw-600">图形验证码</label>
+							</div>
+							<div class="userIptBox">
+								<input type="text" class="login_captchaImageIpt" placeholder="" autocomplete="off">
+								<span class="login_captchaImageBox pd42 pd22">
+									<img src="" alt="" class="login_captchaImage" title="点击刷新图片验证码">
+								</span>
+								<span class="va-b fs12 login_captchaImageChange" style="color: #333;">
+									看不清？
+									<a href="javascript:void(0);">换一张</a>
+								</span>
+								<span class="login_captchaImageTip" style="padding-left: 26px;">
+									<!-- <i class="fa fa-times-circle"></i>格式错误 -->
+								</span>
+							</div>
+						</div>
+						<div class="col-sm-12 pd14 pd34">
+							<!-- <input type="checkbox" class="userRem" id="remeber"> -->
+							<!-- <label for="remeber" class="fw-400 fs12">下次自动登录</label> -->
+						</div>
+						<div class="col-sm-12">
+							<div class="userSub fl">
+								<input type="submit" value="登 录" class="btn btn-themeGreen btn-block loginSubBtn">
+							</div>
+							<!-- <a href="javascript:void(0);" class="md44 fs12 va-b">忘记密码？</a> -->
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--页脚-->
+	<div class="createFooter" style="position: absolute; width: 100%;"></div>
+	
+	
+
+
+
+</div> <!-- wrapper    页面   闭合标签-->
+
+<!--JS引用文件-->
+	<script src="plugins/jquery-2.2.3.min.js?v5"></script>							<!--jQuery 文件-->
+	<script src="plugins/layer/layer.min.js?v5"></script>							<!--弹出层 layer插件-->
+	<script>
+		layer.msg('<i class="fa fa-spinner fa-spin" style="margin-right: 10px;"></i>正在加载...',{ time : 5*60*1000, shade : [ 0.4, '#000',true ] });
+	</script>
+	 <!-- <script src="plugins/jquery-ui-1.12.0/jquery-ui.min.js"></script> -->
+	<!-- <script src="plugins/jquery.slimscroll/jquery.slimscroll.min.js"></script> -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js?v5"></script>
+	<!-- <script src="plugins/bootstrap/js/bootstrap-datetimepicker.min.js"></script> -->
+	<!-- <script src="plugins/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script> -->
+	 <!-- <script src="plugins/jquery.pagination.js"></script> -->
+	 <!-- <script type="text/javascript" src="plugins/jquery.SuperSlide.2.1.1.js"></script> -->
+
+	<!-- <script src="plugins/echarts/echarts.min.js"></script> -->
+
+	<script src="js/ajax.js?v5"></script>
+	<script src="js/globalFn.js?v5"></script>
+	<script src="js/base.js?v5"></script>
+	<script src="js/validate.js?v5"></script>
+	<script src="js/login.js?v5"></script>
+
+
+
+</body>
+</html>

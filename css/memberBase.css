@@ -1,0 +1,180 @@
+/*抬头*/
+	html{ background: #fff; }
+	.mask{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		z-index: 2000;
+		display: none;
+	}
+/*右边工作页面*/
+	.bugContent{ padding: 10px 0 10px 0; }
+	.bugMain{ 
+		position: relative;
+		/*background: background: rgb(246,246,246);*/
+	    padding: 0 0 50px 0;
+	}
+/*我的订单*/
+	.main_table tr{ border-bottom: 1px solid #ddd; cursor: pointer; }
+	.main_table th,
+	.main_table td{
+		padding: 20px 0px;
+		word-wrap: break-word;		/*允许长单词换行*/
+		/*word-break: break-all;*/	/*允许在单词内换行*/
+		/*word-break: keep-all;*/	/*只能在半角空格或连字符处换行*/
+	}
+	.myOrder_table{ 
+		background: rgb(246,246,246);
+		margin: 0 0px 0px 0px;
+		width: 100%;
+		border: none;
+	}
+	.myOrder_table>tbody>tr:nth-of-type(odd)  { background-color: rgb(245,245,245); }
+	.myOrder_table>tbody>tr:nth-of-type(even) { background-color: rgb(248,248,248); }
+
+	.myOrder_table ul,
+	.myOrder_table ul li,
+	.myOrder_table ul li h5,
+	.myOrder_table ul li div{
+		padding: 0;
+	}
+	.myOrder_table ul{ width: 100%; font-size: 1.4rem; text-align: center; }
+	.myOrder_table ul li{ border-right: 1px solid #ddd; }
+	.myOrder_table ul li:last-child{border-right: 0;}
+	.myOrder_table ul li h5{ font-weight: 600;  height: 40px;line-height: 20px; text-align: right; padding-right: 10px; }
+	.myOrder_table ul li div{ color: #666; min-height: 40px; text-align: left; }
+
+	/*.myOrder_table ul li a{ padding: 6px 30px; }*/
+	/*.myOrder_table ul li a{ display: none; }*/
+	.myOrder_table ul li a,
+	.myOrder_table ul li a:hover,
+	.myOrder_table ul li a:active,
+	.myOrder_table ul li a:focus{
+		color: #fff;
+	}
+	.myOrder_table ul li .detail{ background: rgba(5,104,57,.8); }
+	.myOrder_table ul li .detail:hover{ background: rgba(5,104,57,1); }
+
+	.myOrder_table ul li .evaluate{ background: rgba(5,104,57,.8); }
+	.myOrder_table ul li .evaluate:hover{ background: rgba(5,104,57,1); }
+	
+	.myOrder_table ul li .del{ background: rgba(200,22,35,.8); }
+	.myOrder_table ul li .del:hover{ background: rgba(200,22,35,1); }
+
+/*订单详情*/
+	.orderD_Box >div{
+		padding: 5px 0;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+	.orderD_Box >div >label{ text-align: right; padding-right: 0;}
+	.orderD_Box >div >div strong{
+		color: #c81623;
+	}
+	.orderD_Box .orderDBtn .btn{ display: none; margin-bottom: 2px; }
+	
+	.evaluate-star{
+		padding-top: 0px;
+		height: 36px;
+	}
+	.evaluate-star li{
+		color: #fcb040;
+		font-size: 26px;
+		width: 30px;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		display: block;
+		float: left;
+	}
+	.evaluate-star li::before{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: -webkit-translate(-50%, -50%);
+		transform: -ms-translate(-50%, -50%);
+		transform: -o-translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+	.evaluate-star li a{
+		z-index: 20;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: transparent;
+	}
+	.evaluate-star li a:nth-of-type(2){
+		left: 50%;
+	}
+
+	.evaluate-star .fa-star-o{
+		color: #dedede;
+	}
+
+	.addOrderEvaluate_satification input[type=radio]{
+		display: none;
+	}
+	.addOrderEvaluate_satification i{
+		color: #bbb;
+	}
+	.addOrderEvaluate_satification input:checked + label,
+	.addOrderEvaluate_satification input:checked + label i{
+		color: #fcb040;
+	}
+	.addOrderEvaluate_satification i{
+		margin-right: 3px;
+	}
+
+
+/*订单付款*/
+	.bugMain_payOrder{ background: rgb(249,249,249); }
+	.payHeader{ width: 100%; }
+	.payHeader >div{ padding: 0; }
+	.payHeaderLeft label{ float: left; width: 70px; }
+	.payHeaderLeft span{ float: left; width: calc(100% - 70px); -webkit-width: calc(100% - 70px); }
+
+	.payInfo { text-align: center; padding: 50px 15px; }
+    .payInfo h3{ font-size: 2rem; font-weight: 500; padding-bottom: 40px;  }
+    
+	.payInfo .offline p{ color: #666; line-height: 30px; text-align: left; }
+  .payInfo .offline p span{ color: #00aeef; }	
+
+/*没有小于768px，是因为bootstrap以移动端为优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+    @media (min-width: 768px) {
+    	.bugContent_memberPay{ background: rgb(240,240,240); }
+    	.bugContent{ padding: 10px 0 50px 0; }
+    	.bugContent .row{ padding: 0 15px; }
+    	.main_table th,
+		.main_table td{ padding: 20px 15px; }
+        .myOrder_table ul li h5{ line-height: 40px;  }
+        .myOrder_table ul li h5{ text-align: center; padding-right: 0; }
+        .myOrder_table ul li div{ text-align: center; }
+        /*.myOrder_table ul li a.btn{ padding: 6px 4px; }*/
+        .orderD_Box >div >label{ padding-right: 15px; }
+		
+		
+				.evaluate-star{
+					padding-top: 9px;
+					height: 39px;
+				}
+					
+        
+    }
+/* 中等屏幕（桌面显示器，大于等于992px） */
+    @media (min-width: 992px) {
+       .myOrder_table ul li a.btn{ padding: 6px 20px; } 
+    }
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+    @media (min-width: 1200px) {
+       /*.myOrder_table ul li a{ padding: 6px 26px; } */
+    }
+
+
+

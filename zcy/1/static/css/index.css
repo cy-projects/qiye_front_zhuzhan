@@ -1,0 +1,501 @@
+@import './base.css';
+@import './iconfont/iconfont.css';
+@import './modal.css';
+
+.wrapper{
+  background: rgb(237,237,237);
+}
+.layout-main{
+  min-height: 100vh;
+}
+.layout-main .swiper-container{
+  width: 100%;
+  height: 100%;
+}
+.layout-main .swiper-wrapper{
+  min-height: 100vh;
+}
+.layout-main .swiper-slide {
+  width: 2.7rem;
+}
+.layout-main .swiper-slide-wrap{
+  position: relative;
+  width: 100%;
+  margin-top: 0.2rem;
+  padding: 0 0 1rem 0;
+}
+.layout-main .swiper-slide.swiper-slide-vertical{
+  height: 100vh;
+}
+.layout-main .swiper-slide.swiper-slide-vertical .swiper-slide-wrap{
+  padding: 0 !important;
+  margin-top: 0;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.layout-main .swiper-pagination{
+  position: fixed;
+  bottom: 0.8rem;
+}
+.layout-main .swiper-pagination .swiper-pagination-bullet-active{
+  background: #FF6F00;
+}
+
+
+
+
+/* 海报公共样式 */
+.idea-card-wrap{
+  font-size: 0;
+}
+.idea-card-wrap img{
+  width: 100%;
+  height: auto;
+}
+.idea-card-content {
+  position: relative;
+}
+
+/* 卡片右上角锁定 */
+.idea-card-top-right-lock{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 500;
+}
+.idea-card-top-right-lock .bg{
+  height: 0;
+  border: 0.24rem solid rgba(0,0,0, .8);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 510;
+}
+.idea-card-top-right-lock .icon{
+  position: absolute;
+  top: 0.04rem;
+  right: 0.06rem;
+  color: #ccc;
+  z-index: 520;
+}
+.idea-card-top-right-lock .icon i{
+  font-size: 0.16rem;
+}
+
+/* 卡片底部 */
+.idea-card-content .footer{
+  height: 0.8rem;
+  padding: 0 0.24rem;
+  background: #fff;
+}
+.idea-card-content .footer .media-body,
+.idea-card-content .footer .media-right{
+  vertical-align: middle;
+}
+.idea-card-content .footer .media-right{
+  font-size: 0;
+}
+.idea-card-content .footer .qrcode{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.idea-card-content .footer .media-body .logo img{
+  width: auto;
+  height: 0.4rem;
+}
+/* 卡片默认 */
+.idea-card-content .main-no-paid{
+  font-size: 0;
+  width: 100%;
+}
+.idea-card-content .main-no-paid > img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* 默认卡片(卡片类型 1) */
+.ideaCardType1 .coverimg,
+.ideaCardType3 .coverimg{
+  width: 100%;
+  height: 2.7rem;
+}
+.ideaCardType1 .coverimg-wrap,
+.ideaCardType3 .coverimg-wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../img/type_default_slantline_mask.png') no-repeat;
+  background-size: 100% 100%;
+}
+.ideaCardType1 .coverimg-wrap .title,
+.ideaCardType3 .coverimg-wrap .title{
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  right: 0.3rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  word-wrap: break-word;		/*允许长单词换行*/
+  word-break: break-all;		/*允许在单词内换行*/
+  /*word-break: keep-all;*/	/*只能在半角空格或连字符处换行*/
+}
+.ideaCardType1 .coverimg-wrap .title .text,
+.ideaCardType3 .coverimg-wrap .title .text{
+  color: #fff;
+  font-size: 0.16rem;
+  font-weight: 900;
+}
+.ideaCardType1 .coverimg-wrap .author,
+.ideaCardType3 .coverimg-wrap .author{
+  position: absolute;
+  bottom: 0.06rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 1.2;
+}
+.ideaCardType1 .coverimg-wrap .author .name,
+.ideaCardType3 .coverimg-wrap .author .name{
+  font-size: 0.12rem;
+  font-weight: 900;
+}
+.ideaCardType1 .coverimg-wrap .author .time,
+.ideaCardType3 .coverimg-wrap .author .time{
+  font-size: 0.10rem;
+  letter-spacing: 0.01rem;
+}
+
+.ideaCardType1 .coverimg-wrap .title .text{
+  line-height: 0.24rem;
+  max-height: 1.2rem;
+  overflow: hidden;
+}
+
+
+
+
+/* 第2张海报 */
+
+.ideaCardType2 .main{
+  width: 100%;
+  height: 2.7rem;
+}
+.ideaCardType2 .main-wrap{
+  position: relative;
+  padding: 0.44rem 0.8rem 0.4rem 0.4rem;
+  width: 100%;
+  height: 100%;
+}
+.ideaCardType2 .main-wrap .title{
+  width: 100%;
+  height: 100%;
+  font-size: 0.11rem;
+  line-height: 0.2rem;
+  letter-spacing: 0.01rem;
+  color: #ddd;
+  position: relative;
+  text-decoration: none;
+  max-height: 1.4rem;
+  overflow: hidden;
+}
+.ideaCardType2 .main-wrap .title span{
+  color: #333;
+}
+
+.ideaCardType2 .author{
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  text-align: right;
+  color: #999;
+}
+.ideaCardType2 .author .name{
+  font-size: 0.10rem;
+  letter-spacing: 0.01rem;
+}
+.ideaCardType2 .author .brief{
+  font-size: 0.10rem;
+  letter-spacing: 0.01rem;
+}
+
+
+.ideaCardType2 .icon-suji-seal{
+  position: absolute;
+  right: 0.14rem;
+  top: 0.31rem;
+  z-index: 50;
+}
+.ideaCardType2 .icon-suji-seal img{
+  width: auto;
+  height: 0.4rem;
+}
+
+
+/* 第3张海报 */
+.ideaCardType3{
+
+}
+.ideaCardType3 .coverimg-wrap{
+  background: url('../img/type_default_slantline_mask3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.ideaCardType3 .coverimg-wrap .title{
+  top: 50%;
+  left: 0.4rem;
+  right: 0.4rem;
+}
+.ideaCardType3 .coverimg-wrap .title .text{
+  font-size: 0.11rem;
+  font-weight: lighter;
+  line-height: 0.2rem;
+  letter-spacing: 0.01rem;
+  color: #fff;
+
+  max-height: 1.8rem;
+  overflow: hidden;
+}
+.border-wrap{
+  position: relative;
+  width: 100%;
+  height: 0.3rem;
+  overflow: hidden;
+}
+.center-skew-line {
+  position: absolute;
+  width: 0.12rem;
+  height: 0.04rem;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  transform: rotate(60deg) translate(-50%, -50%) ;
+}
+.left-horizontal-line,
+.right-horizontal-line{
+  position: absolute;
+  top: 50%;
+  height: 0.01rem;
+  background: #fff;
+}
+.left-horizontal-line{
+  left: 0.14rem;
+  right: 50%;
+  transform: translate(-0.14rem, -50%) scale(1, .7);
+}
+.right-horizontal-line{
+  left: 50%;
+  right: 0.14rem;
+  transform: translate(0.14rem, -50%) scale(1, .7);
+}
+.ideaCardType3 .coverimg-wrap .author .name{
+  font-size: 0.12rem;
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 生成图片加载弹窗 */
+.modalCreatPosterLoad{
+  /* display: none; */
+}
+.modalCreatPosterLoad .ant-modal-mask{
+  background: #eee;
+}
+.modalCreatPosterLoad .ant-modal-content{
+  background: transparent;
+}
+.modalCreatPosterLoad .main{
+  padding: 0.24rem 0.15rem;
+}
+.modalCreatPosterLoad .main .icon{
+  padding-bottom: 0.24rem;
+}
+.modalCreatPosterLoad .main .icon-img{
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 auto;
+  background: transparent;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: rotate360 1.5s linear infinite;
+}
+.modalCreatPosterLoad .main .icon-img img{
+  width: 100%;
+  height: 100%;
+}
+.modalCreatPosterLoad .main .title{
+  font-size: 0.16rem;
+  font-weight: 900;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+@-webkit-keyframes rotate360 {
+  0%   { transform: rotateZ(0); }
+  100% { transform: rotateZ(360deg); }
+}
+@-o-keyframes rotate360 {
+  0%   { transform: rotateZ(0); }
+  100% { transform: rotateZ(360deg); }
+}
+@-moz-keyframes rotate360 {
+  0%   { transform: rotateZ(0); }
+  100% { transform: rotateZ(360deg); }
+}
+@keyframes rotate360 {
+  0%   { transform: rotateZ(0); }
+  100% { transform: rotateZ(360deg); }
+}
+
+
+/* 积分不足弹窗 */
+.layui-layer.modalBonusNoEnough{
+  border-radius: 0.08rem;
+}
+.modalBonusNoEnough .layui-layer-setwin .layui-layer-close{
+  color: #888;
+  text-decoration: none;
+}
+.modalBonusNoEnough .layui-layer-title{
+  display: none;
+}
+.modalBonusNoEnough.layui-layer-dialog .layui-layer-content{
+  padding: 0.36rem 0.24rem 0.2rem 0.24rem;
+}
+.modalBonusNoEnough .layui-layer-content .title{
+  font-size: 0.24rem;
+  font-weight: 900;
+  color: rgba(0,0,0, 0.87);
+  text-align: center;
+  padding-bottom: 0.1rem;
+}
+.modalBonusNoEnough .layui-layer-content .content{
+  font-size: 0.16rem;
+  color: #666;
+}
+.modalBonusNoEnough .layui-layer-content .content span{
+  font-weight: 900;
+  color: #F44336;
+}
+.modalBonusNoEnough .layui-layer-btn{
+  padding: 0.2rem 0.24rem;
+}
+.modalBonusNoEnough .layui-layer-btn .layui-layer-btn0{
+  margin: 0;
+  width: 100%;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  text-align: center;
+  color: #fff;
+  background: #f44336;
+  border: none;
+  font-size: 0.16rem;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+/* 底部 */
+.layout-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.layout-footer .footer-top{
+  font-size: 0;
+}
+.layout-footer .footer-top img{
+  width: 100%;
+  height: auto;
+}
+.layout-footer .footer-wrap{
+  margin-top: -0.01rem;
+  background: #fff;
+  font-size: .13rem;
+  color: #999;
+  -webkit-box-shadow: 0 -.02rem .04rem 0 rgba(0,0,0,.06);
+  box-shadow: 0 -.02rem .04rem 0 rgba(0,0,0,.06);
+}
+.layout-footer-iphonex .footer-wrap{
+}
+.layout-footer .footer-container{
+  position: relative;
+  min-height: 0.7rem;
+}
+.layout-footer .footer-body{
+  position: absolute;
+  top: 50%;
+  left: 0.24rem;
+  right: 0.24rem;
+  transform: translateY(-50%);
+  line-height: 1.5;
+  text-align: center;
+}
+.layout-footer .footer-wrap span.longclick{
+  font-size: .18rem;
+  font-weight: 900;
+  padding-right: .05rem;
+  color: #333;
+}
+
+.layout-footer .footer-wrap .lock-wrap{
+  margin: 0 auto;
+  width: 1.54rem;
+  height: 0.4rem;
+  line-height: 0.38rem;
+  padding-top: 0.02rem;
+  text-align: center;
+  background: #f44336;
+  border-radius: 0.2rem;
+
+  cursor: pointer;
+}
+.layout-footer .footer-wrap .lock-wrap span{
+  font-size: 0.16rem;
+  font-weight: 900;
+  color: #fff;
+  vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .layout{
+    max-width: 3.75rem;
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,31 @@
+.payType table{ width: 100%; }
+.payType table tr{
+	line-height: 50px;
+	min-height: 50px;
+	padding: 20px 0px;
+	word-wrap: break-word;		/*允许长单词换行*/
+	/*word-break: break-all;*/	/*允许在单词内换行*/
+	/*word-break: keep-all;*/	/*只能在半角空格或连字符处换行*/
+}
+.payType table tr:nth-of-type(odd)  { background-color: rgb(245,245,245); }
+.payType table tr:nth-of-type(even) { background-color: rgb(248,248,248); }
+.payType table tr th,
+.payType table tr td{
+	border: 1px solid #ddd;
+}
+.payType table tr th{ text-align: right; padding-right: 10px; min-width: 70px; }
+.payType table tr td{ padding-left: 10px; }
+
+/* 小屏幕（平板，大于等于768px） */
+	@media (min-width: 768px) {
+
+	}
+/* 中等屏幕（桌面显示器，大于等于992px） */
+	@media (min-width: 992px) {
+
+
+	}
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+	@media (min-width: 1200px) {
+
+	}

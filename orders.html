@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>精雀体系</title>
+
+<!--CSS引用文件-->
+	<link type="image/x-icon" rel="icon" href="favic.ico">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">			<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.min.css">		<!--font小图标-->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-datetimepicker.min.css">	
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.min.css">	
+	<link rel="stylesheet" href="plugins/layer/skin/layer.css">						<!--弹出层 layer插件-->
+	<!-- <link rel="stylesheet" href="plugins/jquery-ui-1.12.0/jquery-ui.min.css"> -->		<!--jQuery UI-->
+
+	<link rel="stylesheet" href="css/base.css?v7">
+	<link rel="stylesheet" href="css/memberBase.css?v7">
+	<link rel="stylesheet" href="css/layerBase.css?v7">
+<!--JS引用文件-->
+	<script src="js/utils.js?v5"></script>
+	<script type="text/javascript">
+		// platform();
+		bugStorage.delItem("orderCreateId");
+		bugStorage.delItem("orderDId");
+		bugStorage.delItem("orderPayId");
+		// window.boss_token = bugStorage.getItem('token');
+        // if(boss_token == null){
+        	// window.location.href = '/login.html';
+        // }
+	</script>
+
+</head>
+<body>
+<div class="mask"></div>
+<div class="wrapper bg-fff" data-value="member">
+	<!--头部横幅-->
+	<div class="createBanner"></div>
+	<div class="bugContent">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 bugMain"></div>
+			</div>
+		</div>
+	</div>
+	<!--页脚-->
+	<div class="createFooter"></div>
+</div>	<!-- wrapper    页面   闭合标签-->
+
+
+
+
+<!--JS引用文件-->
+	<script src="plugins/jquery-2.2.3.min.js"></script>							<!--jQuery 文件-->
+	<script src="plugins/layer/layer.min.js"></script>							<!--弹出层 layer插件-->
+	<script>layer.msg('<i class="fa fa-spinner fa-spin" style="margin-right: 10px;"></i>正在加载...',{ time : 5*60*1000, shade : [ 0.4, '#000',true ] }); </script>
+	 <!-- <script src="plugins/jquery-ui-1.12.0/jquery-ui.min.js"></script> -->
+	<!-- <script src="plugins/jquery.slimscroll/jquery.slimscroll.min.js"></script> -->	<!--滚动条jquery.slimscroll.js插件-->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>				<!-- Bootstrap -->
+	<!-- <script src="plugins/bootstrap/js/bootstrap-datetimepicker.min.js"></script> -->
+	<!-- <script src="plugins/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script> -->
+	<!-- <script src="plugins/jquery.pagination.js"></script>  -->						<!-- jQuery 分页插件-->
+	<script src="js/ajax.js?v7"></script>
+	<script src="js/localStorageInfo.js?v7"></script>
+	<!-- <script src="js/memberAllowAction.js?v4"></script> -->
+	<script src="js/globalFn.js?v7"></script>
+	<script src="js/datesFn.js?v7"></script>
+	<script src="js/base.js?v7"></script>	
+	<script src="js/memberAjax.js?v7"></script>	
+	
+		
+	
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+/*layer 弹窗相似属性*/
+	form.popupForm{ padding: 20px 0 50px 0; }
+	.layui-layer{
+		/*position: absolute !important;*/
+		margin-bottom: 150px !important;
+	}
+	/*.layui-layer .layui-layer-content{ overflow: initial !important;  }*/
+	.layui-layer-dialog .layui-layer-btn a{ line-height: 26px; }
+			.layer_title{
+				font-size: 16px;
+			}
+			.layer_title i{
+				color: #056839;
+				padding-right: 5px;
+			}
+			.layer_title strong{ font-weight: 400; }
+	.layui-layer-content form { height: 100%; }
+	.layui-layer-content form .row{ margin-left: 0; margin-right: 0; }
+	.layer_p{
+		width: 100%;
+		/*min-height: 36px;*/
+		line-height: 36px;
+		/*margin-top: 6px;*/
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+	.layer_p >label{
+		text-align: left;
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+	.layer_p strong{ color: #C81623; font-size: 18px; padding-right: 10px; }
+	.layer_p input,
+	.layer_p textarea{
+		width: 100%;
+	}
+	.layer_p input{
+		height: 40px;
+		line-height: 40px;		
+		padding: 6px 12px;
+		vertical-align: middle;
+		z-index: 10;
+	}
+	.layer_p input[type=password]{ padding: 0 12px; }	
+	.layer_p input[type=checkbox],
+	.layer_p input[type=radio]{
+		width: initial;
+		height: initial;
+		/*height: 20px;*/
+		margin-right: 0px;
+		margin-top: -3px;
+		cursor: pointer;
+	}
+	.layer_p input[type=radio]:checked,
+	.layer_p input[type=checkbox]:checked{ 
+        /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0,0.075);*/
+        /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);*/
+	}
+	.layer_p textarea{ width: 100%; line-height: 20px; padding: 6px 12px; }
+	.layer_for >div{ float: right; padding-right: 15px; }
+	.layer_for input[type=button],
+	.layer_for input[type=submit]{
+		width: 60px;
+		height: 35px;
+		line-height: 35px;
+		background-color: #fff;
+		margin-left: 10px;
+		border: 1px solid #ccc;
+	}
+	.layer_for input[type=submit]{
+		color: #fff;
+		background-color: rgba(5,104,57,0.8);
+		border: 1px solid rgba(0,0,0,0);
+	}
+	.layer_for input[type=button]:hover{ background-color: #eee; }
+	.layer_for input[type=submit]:hover, .layer_for input[type=submit]:active{ background-color: rgba(5,104,57,1); }
+
+	
+	.layer_p .input-group >input{ background-color: #fff; cursor: pointer; }
+	.layer_p .input-group >.input-group-btn >button,
+	.layer_p .input-group >.input-group-btn >label{
+		width: 38px;
+		height: 40px;
+		border: 1px solid #ccc;
+		border-left: none;
+		padding: 0;
+		line-height: 40px;
+	}
+	.layer_p .input-group >.input-group-btn >button:hover,
+	.layer_p .input-group >.input-group-btn >label:hover{ background-color: rgb(238,238,238); }
+	.layer_p .input-group >.input-group-btn >button >strong,
+	.layer_p .input-group >.input-group-btn >label >strong{
+		color: #d9534f;
+		font-size: 20px;
+	}
+
+	.layui-layer .layui-layer-setwin{
+		top: 0px;
+		right: 0;
+		height: 42px;
+		line-height: 42;
+	}
+	.layui-layer .layui-layer-setwin a{
+		width: 50px;
+		height: 42px;
+		line-height: 42px;
+		margin-left: 0;
+		padding:0 15px;
+		font-size: 22px; 
+		color: rgba(0,0,0,0.2);
+		text-decoration: none;
+		text-shadow: 0 1px 0 #fff;
+		transition: all 0.2s linear; 
+		-webkit-transition: all 0.2s linear;
+	}
+	.layui-layer .layui-layer-setwin a:hover{ color: rgba(0,0,0,0.6); }
+
+/*单选框、复选框*/
+	.layer_pCheckbox1 li{ float: left; padding-right: 10px;}
+	.layer_pCheckbox1 li label{ font-weight: 400; margin-bottom: 0; cursor: pointer; padding-left: 3px;}
+	.layer_pCheckbox1 li input{
+		appearance: radio;  
+    -moz-appearance: radio;
+    -webkit-appearance: radio;
+	}
+	.layer_pCheckbox2 li{ line-height: 30px; }
+	.layer_pCheckbox2 li label{ font-weight: 400; margin-bottom: 0; cursor: pointer; padding-left: 3px;}
+	
+/*	.addOrderEvaluate_satification label{
+		min-width: 80px;
+	}*/
+
+
+/*没有小于768px，是因为bootstrap以移动端为优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+    @media (min-width: 768px) {
+        .layer_p >label{ text-align: right;  margin-bottom: 5px;}
+        .layer_pLh47 .layer_p{ line-height: 47px; }
+    }
+/* 中等屏幕（桌面显示器，大于等于992px） */
+    @media (min-width: 992px) {
+        
+    }
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+    @media (min-width: 1200px) {
+       
+    }

@@ -1,0 +1,54 @@
+.ant-modal-mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.65);
+  height: 100%;
+  z-index: 1000;
+}
+.ant-modal-wrap{
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  /* white-space: nowrap; */
+  /* -webkit-overflow-scrolling: touch; */
+}
+.ant-modal{
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  padding-bottom: 48rpx;
+  margin: 0 auto;
+  width: auto;
+  max-width: 710rpx;
+}
+.ant-modal-content{
+  position: relative;
+  background-color: #fff;
+  border-radius: 8rpx;
+  /* background-clip: padding-box; */
+  overflow: hidden;
+  -webkit-box-shadow: 0 8rpx 24rpx rgba(0,0,0,.15);
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,.15);
+}
+
+/* 如果弹窗居中 ，为 .ant-modal-wrap添加类名 .vertical-center-modal */
+.ant-modal-wrap.vertical-center-modal::before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+.ant-modal-wrap.vertical-center-modal .ant-modal{
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}

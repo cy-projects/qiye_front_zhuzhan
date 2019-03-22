@@ -1,0 +1,119 @@
+/*轮播*/
+	.bannerBox{ position: relative; }
+	.bannerLb_tab{ position: absolute; top: 20%; left: 50px; width: 100%;  }
+	.bannerLb_tab h3{ font-size: 2rem; color: #056839; }
+	.bannerLb_tab p{ font-size: 1.4rem; }
+/*公司介绍*/
+	.aboutUs{
+		margin-top: 50px;
+		padding: 50px 0;
+		border-top: 1px solid #ddd;
+		background: #f6f6f6;
+	}
+	.aboutUs h5{
+		text-align: center;
+		padding: 20px 15px 10px 15px;
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+	.aboutUs p{
+		padding: 5px 15px;
+		text-indent: 2rem; 
+	}
+	.topPic{
+		position: absolute;
+		top: -100px;
+		width: 100%;
+		height: 100px;
+	}
+/*公司联系*/
+	.contactUs{
+		background: url(../img/banner4_2.jpg) no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		border-bottom: 1px solid #ddd;
+		padding: 60px 0;
+	}
+	/*.contactUs p{ padding: 5px 0 }*/
+	.contactUsBox { padding-bottom: 20px; }
+	.contactUsBox .item{
+		min-height: 330px;
+		text-align: center;
+		background: #fff;
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		box-shadow: 0 4px 23px 5px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.15);
+		padding: 15px 0 0 0;
+	}
+	.contactUsBox .item .pic img{ width: 100px; height: 100px; }
+	.contactUsBox .item h5{ height: 40px;line-height: 40px;font-size: 1.8rem;padding-bottom: 86px; }
+	.contactUsBox .item p { line-height: 20px; padding: 5px 0; }
+	.contactUsBox .item p strong{
+		position: relative;
+		top: 5px;
+	}
+	.contactUsBox .item p a,
+	.contactUsBox .item p a:hover{
+		color: #056839;
+	}
+
+	.contactUsBox .item .link{ padding-top: 10px; }
+	.contactUsBox .item .link a{ min-width: 80px; }
+	.contactUsBox .item .weixin img{ width: 150px; height: auto; }
+
+	.rotateZ360{
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-animation: contactPic 1 linear 1 0.5s forwards;
+		animation: contactPic 1s linear 1 0.5s forwards;
+	}
+	@-webkit-keyframes contactPic {
+		0%   { transform: rotateY(0deg); }
+		100% { transform: rotateY(360deg); }
+	}
+	@-o-keyframes contactPic {
+		0%   { transform: rotateY(0deg); }
+		100% { transform: rotateY(360deg); }
+	}
+	@-moz-keyframes contactPic {
+		0%   { transform: rotateY(0deg); }
+		100% { transform: rotateY(360deg); }
+	}
+	@keyframes contactPic {
+		0%   { transform: rotateY(0deg); }
+		100% { transform: rotateY(360deg); }
+	}
+
+	.contactUs-companyIntro{
+		font-size: 14px;
+		line-height: 2;
+		border: none;
+		padding: 5px 15px;
+		color: #666;
+		white-space: pre-wrap;
+		/*text-indent: 2rem;*/
+	}
+
+
+/* 小屏幕（平板，大于等于768px） */
+	@media (min-width: 768px) {
+		.bannerLb_tab h3{ font-size: 3rem; line-height: 2; }
+		.bannerLb_tab p{ font-size: 1.6rem; }
+		.aboutUs{ margin-top: 60px; padding: 60px 0 50px 0; }
+		.topPic{ top: -120px; height: 120px; }
+		.aboutUs h5{ line-height: 2; }
+	}
+/* 中等屏幕（桌面显示器，大于等于992px） */
+	@media (min-width: 992px) {
+		.bannerLb_tab h3{ font-size: 3.4rem; }
+		.bannerLb_tab p{ font-size: 2rem; }
+		.aboutUs{ margin-top: 70px; padding: 70px 0 50px 0; }
+		.topPic{ top: -140px; height: 140px; }
+
+	}
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+	@media (min-width: 1200px) {
+		.bannerLb_tab h3{ font-size: 4rem; }
+		.bannerLb_tab p{ font-size: 2.4rem; }
+		.aboutUs{ margin-top: 80px; padding: 80px 0 50px 0; }
+		.topPic{ top: -160px; height: 160px; }
+	}

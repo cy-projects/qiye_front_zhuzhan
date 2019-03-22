@@ -1,0 +1,287 @@
+
+<!-- 订单列表页面 -->
+	<div class="bugMain_myOrder">
+		<div class="jumuTab pd34 pd14">
+			<h3>MY ORDER</h3>
+			<div class="intro">
+				<div class='line'></div>
+				<span>我的订单</span>
+			</div>
+		</div>
+		<table class="main_table myOrder_table"><tbody></tbody></table>
+	</div>
+<!-- 订单详情页面 -->
+	<div class="bugMain_orderD">
+		<div class="jumuTab pd34 pd14">
+			<h3>ORDER DETAIL</h3>
+			<div class="intro">
+				<div class='line'></div>
+				<span>订单详情</span>
+			</div>
+		</div>
+		<div class="orderD_Box clearfix">
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">订单号</label>
+				<div class="col-xs-8 orderD_no"><ul></ul></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">订单状态</label>
+				<div class="col-xs-8 orderD_state"><ul></ul></div>
+			</div>
+			<!-- <div class="col-xs-12"><hr></div>-->
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">认证项目</label>
+				<div class="col-xs-8 orderD_project"><ul></ul></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">企业认证人数</label>
+				<div class="col-xs-8 orderD_person"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">获证时间周期</label>
+				<div class="col-xs-8 orderD_time"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">认证范围描述</label>
+				<div class="col-xs-8 orderD_description"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">城市选择</label>
+				<div class="col-xs-8 orderD_city"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">有无设计</label>
+				<div class="col-xs-8 orderD_design"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">有无许可证要求</label>
+				<div class="col-xs-8 orderD_license"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">法律法规文件</label>
+				<div class="col-xs-8 orderD_legal"><ul></ul></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">认证机构选择</label>
+				<div class="col-xs-8 orderD_auth"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">发票需要</label>
+				<div class="col-xs-8 orderD_invoice"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">配合度</label>
+				<div class="col-xs-8 orderD_oprate"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">需上门洽谈</label>
+				<div class="col-xs-8 orderD_visit"></div>
+			</div>
+			<div class="col-xs-12 orderD_travelPrice-col">
+				<label for="" class="col-xs-4">包含差旅费</label>
+				<div class="col-xs-8 orderD_travelPrice"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">备注</label>
+				<div class="col-xs-8 orderD_notes"></div>
+			</div>
+			<div class="col-xs-12">
+				<label for="" class="col-xs-4">总价</label>
+				<div class="col-xs-8 orderD_totalPrice"></div>
+			</div>
+			<div class="col-xs-12 orderDBtn">
+				<div class="fr pd23 pd43">
+					<a href="./orders.html" class="btn btn-themeYellow  	 orderDBtn_return">返回</a>
+					<a href="javascript:void(0);" class="btn btn-themeGreen  orderDBtn_export">生成合同</a>
+					<a href="./orderPay.html" class="btn btn-themeBlue  	 orderDBtn_pay">付款</a>
+					<a href="javascript:void(0);" class="btn btn-themeGreen  	 orderDBtn_evaluate">服务评价</a>
+					<a href="./orderEdit.html" class="btn btn-themeBlue    orderDBtn_edit">修改</a>
+					<a href="javascript:void(0);" class="btn btn-themeRed orderDBtn_del">删除</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- 修改订单页面 -->
+	<div class="bugMain_editOrder">
+		<div class="jumuTab pd34 pd14">
+			<h3>CHANGE ORDER</h3>
+			<div class="intro">
+				<div class='line'></div>
+				<span>修改订单</span>
+			</div>
+		</div>
+		<div class="editOrder_tableBox pd03"></div>
+	</div>
+<!-- 修改订单 --> <!-- id="editOrderForm" -->
+	<form action="" class="orderForm">
+		<table class="md11">
+			<tbody>
+			<!--认证项目-->
+				<tr class="projectTr">
+					<th class="tit">认证项目</th>
+					<td>
+						<div class="smfl cfProject" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Project"></div></div>
+					</td>
+				</tr>
+			<!--企业认证人数-->
+				<tr class="personTr">
+					<th class="tit">企业认证人数</th>
+					<td>
+						<div class="smfl cfPerson" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Person"></div></div>
+					</td>
+				</tr>								
+			<!--获证时间周期-->
+				<tr class="timeTr">
+					<th class="tit">获证时间周期</th>
+					<td>
+						<div class="smfl cfTime" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Time"></div></div>
+					</td>
+				</tr>
+				
+			<!--认证范围描述-->
+				<tr class="descriptionTr">
+					<th class="tit">认证范围描述</th>
+					<td>
+						<div class="smfl cfDescription">
+							<textarea name="description" rows="2" placeholder="" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+							<p class="fs12 color999 lh20">示例：XXX的生产；XXX的设计；XXX的销售</p>
+						</div>
+						<div class="instructions"><span>[说明]</span><div data-value="Description"></div></div>
+					</td>
+				</tr>
+			<!--城市选择-->
+				<tr class="cityTr">
+					<th class="tit">城市选择</th>
+					<td>
+						<div class="smfl cfCity">
+							<ul>
+								<li class="cfCityLi">
+									<div class="downIcon"></div>
+									<select class="prov"></select> 
+								</li>
+								<li class="cfCityLi">
+									<div class="downIcon"></div>
+									<select class="city"></select>
+								</li>
+							</ul>
+						</div>
+						<div class="instructions"><span>[说明]</span><div data-value="City"></div></div>
+					</td>
+				</tr>
+			<!--有无设计-->
+				<tr class="designTr trHide">
+					<th class="tit">有无设计</th>
+					<td>
+						<div class="smfl cfDesign" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Design"></div></div>
+					</td>
+				</tr>
+			<!--有无许可证要求-->
+				<tr class="licenseTr trHide">
+					<th class="tit">有无许可证要求</th>
+					<td>
+						<div class="smfl cfLicence" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="License"></div></div>
+					</td>
+				</tr>
+			<!--法律法规文件-->
+				<tr class="legalTr trHide">
+					<th class="tit">法律法规文件</th>
+					<td>
+						<div class="smfl cfLegal" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Legal"></div></div>
+					</td>
+				</tr>
+			<!--认证机构选择-->
+				<tr class="authTr trHide">
+					<th class="tit">认证机构选择</th>
+					<td>
+						<div class="smfl cfAuth" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Auth"></div></div>
+					</td>
+				</tr>
+			<!--发票需要-->
+				<tr class="invoiceTr trHide">
+					<th class="tit">发票需要</th>
+					<td>
+						<div class="smfl cfInvoice" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Invoice"></div></div>
+					</td>
+				</tr>
+			<!--配合度-->
+				<tr class="operateTr trHide">
+					<th class="tit">配合度</th>
+					<td>
+						<div class="smfl cfOperate" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Operate"></div></div>
+					</td>
+				</tr>
+			<!--需上门洽谈-->
+				<tr class="visitTr trHide">
+					<th class="tit">需上门洽谈</th>
+					<td>
+						<div class="smfl cfVisit" data-ids=""><ul></ul></div>
+						<div class="instructions"><span>[说明]</span><div data-value="Visit"></div></div>
+					</td>
+				</tr>
+			<!--启用差旅费-->
+				<tr class="visitTr trHide visitTrTravelPrice">
+					<th class="tit">包含差旅费</th>
+					<td>
+						<div class="smfl cfTravelPrice" data-ids="false">
+							<ul>
+								<li data-id="true" data-mode="dan">是</li>
+								<li data-id="false" data-mode="dan" class="checked">否</li>
+							</ul>
+						</div>
+						<div class="instructions"><span>[说明]</span><div data-value="TravelPrice"></div></div>
+					</td>
+				</tr>
+			<!--备注-->
+				<tr class="notesTr trHide">
+					<th class="tit">备注</th>
+					<td>
+						<div class="smfl cfNotes">
+							<textarea name="notes" rows="4" placeholder="" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+						</div>
+						<div class="instructions"><span>[说明]</span><div data-value="Notes"></div></div>
+					</td>
+				</tr>
+
+			<!-- 总价 -->
+				<tr>
+					<th class="tit">总价</th>
+					<td class="text-center">
+						<div class="cfTotalPrice fl"></div>
+						<a href="javascript:void(0);" class="more">更多选项<i class="fa fa-chevron-circle-down pd41"></i></a>
+						<a href="javascript:void(0);" class="less trHide">更少选项<i class="fa fa-chevron-circle-up pd41"></i></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="md14">
+			<div class="fr">
+				<a href="./orders.html" class="btn btn-themeYellow cancel md22">取消</a>
+				<button type="submit" class="btn btn-themeGreen orderSub" >提交</button>
+			</div>
+		</div>
+	</form>
+
+<!-- 订单付款页面 -->
+	<div class="bugMain_editOrder">
+		<div class="jumuTab pd34 pd14">
+			<h3>CHANGE ORDER</h3>
+			<div class="intro">
+				<div class='line'></div>
+				<span>修改订单</span>
+			</div>
+		</div>
+		<div class="editOrder_tableBox pd03"></div>
+	</div>
+
+

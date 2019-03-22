@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- 强制浏览器使用WebKit内核 -->
+  <!-- 强制Chromium内核，作用于360浏览器、QQ浏览器等国产双核浏览器： -->
+  <meta name="renderer" content="webkit">
+  <!-- 强制Chromium内核，作用于其他双核浏览器 -->
+  <meta name="force-rendering" content="webkit">
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- 线上拉取缓存 -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+  <title>Document</title>
+  <script src="static/js/rem.js"></script>
+  <link rel="stylesheet" href="static/vendors/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="static/css/index.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="layout">
+      <div class="layout-main">
+        <div class="swiper-container">
+      		<div class="swiper-wrapper">
+            <!-- 海报1 -->
+      			<!-- <div class="swiper-slide">
+              <div class="swiper-slide-wrap">
+                <div class="ppt-poster-wrap" id="ppt-poster-wrap0"></div>
+                <div class="ppt-content pptTypeDefault" id="ppt-poster-origin0">
+                </div>
+              </div>
+            </div> -->
+      		</div>
+          <div class="swiper-pagination"></div>
+      	</div>
+
+
+      </div>
+
+      <div class="layout-footer">
+        <div class="footer-top">
+          <img src="static/img/footer-top-triangle.png" alt="">
+        </div>
+        <div class="footer-wrap">
+          <div class="footer-container">
+            <div class="footer-body">
+              <!-- <div>
+                <span class="longclick">长按</span>
+                <span class="">保存图片，发给好友或分享朋友圈</span>
+              </div> -->
+            </div>
+          </div>
+          <!-- <div class="lock-wrap"> <span>5 知识分解锁</span> </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 生成图片加载弹窗 -->
+  <div class="modalCreatPosterLoad">
+    <div class="ant-modal-mask"></div>
+    <div class="ant-modal-wrap vertical-center-modal">
+      <div class="ant-modal">
+        <div class="ant-modal-content">
+          <div class="main">
+            <div class="icon">
+              <div class="icon-img"><img src="static/img/loading.png" alt=""></div>
+            </div>
+            <div class="title">卡片生成中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+  <script src="static/js/base.js"></script>
+  <script src="static/vendors/layer/layer.js"></script>
+  <script src="static/vendors/swiper/swiper.min.js"></script>
+  <script src="static/vendors/html2canvas.js"></script>
+  <!-- <script src="static/vendors/html2canvas.min.js"></script> -->
+  <script src="static/vendors/canvas2image.js"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+
+  <script src="static/js/createPoster.js"></script>
+  <script src="static/js/index.js?v1"></script>
+</body>
+</html>

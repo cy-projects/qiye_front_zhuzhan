@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>精雀体系</title>
+
+<!--CSS引用文件-->
+	<link type="image/x-icon" rel="icon" href="favic.ico">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.min.css">	
+	<link rel="stylesheet" href="plugins/layer/skin/layer.css">
+	<link rel="stylesheet" href="css/layerBase.css?v8">
+	<link rel="stylesheet" href="css/base.css?v8">
+	<link rel="stylesheet" href="css/onlinePrice.css?v8">
+
+	
+<!--JS引用文件-->
+	<script src="js/utils.js"></script>
+	<script type="text/javascript">
+		
+		// platform();
+		// window.boss_token = bugStorage.getItem('boss_token');
+  //       if(boss_token == null){
+  //       	window.location.href = '/boss/login.html';
+  //       }
+	</script>
+</head>
+<body>
+<div class="mask"></div>
+<div class="wrapper">
+	<!--头部横幅-->
+	<div class="createBanner"></div>
+	<!--在线报价-->
+	<div class="pd14 pd36">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<form action="" id="onlinePriceForm" class="orderForm">
+						<table class="md11">
+							<thead>
+								<tr class="hd">
+									<th colspan="2">
+										<span>在线报价/定制</span>
+										<span class="subtitle fs12 fw400">（根据您的所需，请填写下面相关内容，匹配出相关价格）</span>
+										<span class="hb_sub #999 fr">
+											<em class="fw600 fs14 color333">订单要求</em>
+											>
+											<em class="fw400 fs12 color999">计算价格</em>
+										</span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+							<!--认证项目-->
+								<tr class="projectTr">
+									<th class="tit">认证项目</th>
+									<td>
+										<div class="smfl cfProject" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Project"></div></div>
+									</td>
+								</tr>
+							<!--企业认证人数-->
+								<tr class="personTr">
+									<th class="tit">企业认证人数</th>
+									<td>
+										<div class="smfl cfPerson" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Person"></div></div>
+									</td>
+								</tr>								
+							<!--获证时间周期-->
+								<tr class="timeTr">
+									<th class="tit">获证时间周期</th>
+									<td>
+										<div class="smfl cfTime" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Time"></div></div>
+									</td>
+								</tr>
+								
+							<!--认证范围描述-->
+								<tr class="descriptionTr">
+									<th class="tit">认证范围描述</th>
+									<td>
+										<div class="smfl cfDescription">
+											<textarea name="description" rows="2" placeholder="" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+											<p class="fs12 color999 lh20">示例：XXX的生产；XXX的设计；XXX的销售</p>
+										</div>
+										<div class="instructions"><span>[说明]</span><div data-value="Description"></div></div>
+									</td>
+								</tr>
+							<!--城市选择-->
+								<tr class="cityTr">
+									<th class="tit">城市选择</th>
+									<td>
+										<div class="smfl cfCity">
+											<ul>
+												<li class="cfCityLi">
+													<div class="downIcon"></div>
+													<select class="prov"></select> 
+												</li>
+												<li class="cfCityLi">
+													<div class="downIcon"></div>
+													<select class="city"></select>
+												</li>
+											</ul>
+										</div>
+										<div class="instructions"><span>[说明]</span><div data-value="City"></div></div>
+									</td>
+								</tr>
+							<!--有无设计-->
+								<tr class="designTr trHide">
+									<th class="tit">有无设计</th>
+									<td>
+										<div class="smfl cfDesign" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Design"></div></div>
+									</td>
+								</tr>
+							<!--有无许可证要求-->
+								<tr class="licenseTr trHide">
+									<th class="tit">有无许可证要求</th>
+									<td>
+										<div class="smfl cfLicence" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="License"></div></div>
+									</td>
+								</tr>
+							<!--法律法规文件-->
+								<tr class="legalTr trHide">
+									<th class="tit">法律法规文件</th>
+									<td>
+										<div class="smfl cfLegal" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Legal"></div></div>
+									</td>
+								</tr>
+							<!--认证机构选择-->
+								<tr class="authTr trHide">
+									<th class="tit">认证机构选择</th>
+									<td>
+										<div class="smfl cfAuth" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Auth"></div></div>
+									</td>
+								</tr>
+							<!--发票需要-->
+								<tr class="invoiceTr trHide">
+									<th class="tit">发票需要</th>
+									<td>
+										<div class="smfl cfInvoice" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Invoice"></div></div>
+									</td>
+								</tr>
+							<!--配合度-->
+								<tr class="operateTr trHide">
+									<th class="tit">配合度</th>
+									<td>
+										<div class="smfl cfOperate" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Operate"></div></div>
+									</td>
+								</tr>
+							<!--需上门洽谈-->
+								<tr class="visitTr trHide">
+									<th class="tit">需上门洽谈</th>
+									<td>
+										<div class="smfl cfVisit" data-ids=""><ul></ul></div>
+										<div class="instructions"><span>[说明]</span><div data-value="Visit"></div></div>
+									</td>
+								</tr>
+							<!--启用差旅费-->
+								<tr class="trHide visitTrTravelPrice">
+									<th class="tit">包含差旅费</th>
+									<td>
+										<div class="smfl cfTravelPrice" data-ids="false">
+											<ul>
+												<li data-id="true" data-mode="dan">是</li>
+												<li data-id="false" data-mode="dan" class="checked">否</li>
+											</ul>
+										</div>
+										<div class="instructions"><span>[说明]</span><div data-value="TravelPrice"></div></div>
+									</td>
+								</tr>
+							<!--备注-->
+								<tr class="notesTr trHide">
+									<th class="tit">备注</th>
+									<td>
+										<div class="smfl cfNotes">
+											<textarea name="notes" rows="4" placeholder="" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+										</div>
+										<div class="instructions"><span>[说明]</span><div data-value="Notes"></div></div>
+									</td>
+								</tr>
+							<!-- 总价 -->
+								<tr>
+									<th class="tit">总价</th>
+									<td class="text-center">
+										<div class="cfTotalPrice fl"></div>
+										<a href="javascript:void(0);" class="more">更多选项<i class="fa fa-chevron-circle-down pd41"></i></a>
+										<a href="javascript:void(0);" class="less trHide">更少选项<i class="fa fa-chevron-circle-up pd41"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="col-xs-12 md12">
+							<input type="submit" class="btn btn-themeGreen fr orderSub" id="onlinePriceBtn" value="确认订单信息" disabled="disabled" >
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--页脚-->
+	<div class="createFooter"></div>
+</div> <!-- wrapper    页面   闭合标签-->
+
+
+
+<!--JS引用文件-->
+	<script src="plugins/jquery-2.2.3.min.js"></script>							<!--jQuery 文件-->
+	<script src="plugins/layer/layer.min.js"></script>							<!--弹出层 layer插件-->
+	<script>
+		layer.msg('<i class="fa fa-spinner fa-spin" style="margin-right: 10px;"></i>正在加载...',{ time : 5*60*1000, shade : [ 0.4, '#000',true ] });
+	</script>
+	 <!-- <script src="plugins/jquery-ui-1.12.0/jquery-ui.min.js"></script> -->
+	<!-- <script src="plugins/jquery.slimscroll/jquery.slimscroll.min.js"></script> -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="plugins/bootstrap/js/bootstrap-datetimepicker.min.js"></script> -->
+	<!-- <script src="plugins/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script> -->
+	 <!-- <script src="plugins/jquery.pagination.js"></script> -->
+	 <!-- <script type="text/javascript" src="plugins/jquery.SuperSlide.2.1.1.js"></script> -->
+
+	<!-- <script src="plugins/echarts/echarts.min.js"></script> -->	
+	<!-- <script src="plugins/cityselect/city.min.js"></script> -->
+	<!-- <script src="plugins/cityselect/jquery.cityselect.js"></script> -->
+	
+	<script src="js/ajax.js?v8"></script>
+	<script src="js/globalFn.js?v8"></script>
+	<script src="js/base.js?v8"></script>
+	<script src="js/onlinePrice.js?v8"></script>
+	<script src="js/changePwd.js?v8"></script>
+
+</body>
+</html>

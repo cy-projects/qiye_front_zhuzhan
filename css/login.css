@@ -1,0 +1,75 @@
+.user_box{
+	position: relative;
+	margin-top: 30px;
+}
+.userTitle{
+	font-size: 26px;
+	color: #000;
+	font-weight: 400;
+}
+.userIptBox input{
+	-webkit-width: calc(100% - 30px);
+	width: calc(100% - 30px);
+	padding: 6px 12px;
+	height: 20px;
+	/* line-height: 20px; */
+	box-sizing: initial;
+}
+.userIptBox span{
+	color: #c81623;
+	padding-left: 10px;
+	font-size: 12px;
+}
+.userIptBox span i{ padding-right: 5px; }
+.userRem{ margin-top: -3px !important; }
+
+.phoneMsPopupBtn{
+	font-size: 12px;
+}
+.phoneMsPopupBtn:hover,
+.phoneMsPopupBtn:focus{
+    text-decoration: none;
+}
+
+/*登陆*/	
+	.userIptBox .login_captchaImageIpt{
+		width: 80px;
+	}
+	.userIptBox .login_captchaImageBox{
+		height: 34px;
+		cursor: pointer;
+	}
+	.userIptBox  .login_captchaImageBox img{
+		width: auto;
+	}
+/*注册*/
+	.popupForm .captchaBox{
+		height: 40px;
+		cursor: pointer;
+	}
+	.popupForm .captchaBox img{
+		width: auto;
+	}
+	.popupForm .captchaBoxChange{
+		line-height: initial;
+	}
+
+
+/*没有小于768px，是因为bootstrap以移动端为优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+    @media (min-width: 768px) {
+        .user_box{
+			padding: 45px 50px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		.userIptBox input{ width: 300px; }
+    }
+/* 中等屏幕（桌面显示器，大于等于992px） */
+    @media (min-width: 992px) {
+        
+    }
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+    @media (min-width: 1200px) {
+       
+    }

@@ -1,0 +1,705 @@
+h3{
+	font-size: 2.4rem;
+	/*height: 50px;*/
+	line-height: 30px;
+	padding: 10px 0 30px 0;
+	font-weight: 600;
+	text-align: center;
+	color: rgb(5,104,57);
+}
+h5{
+	font-size: 1.6rem;
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 600;
+	padding-top: 10px;
+}
+/*轮播*/
+	.bannerBox img{
+		width: 250%;
+		margin-left: -30%;
+		/*transform: translateY(-10%);*/
+	}
+	.bannerLb_tab{ 
+		position: absolute; 
+		/*top: 15px; */
+		top: 50%;
+		left: 0; 
+		width: 100%;
+		color: #fff; 
+		text-align: left;
+		/*padding: 0 15px; */
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.bannerLb_tab .media-body{ width: 100%; }
+	.bannerLb_tab .media-body,
+	.bannerLb_tab .media-right{ vertical-align: middle; }
+	.bannerLb_tab .media-body h5{ 
+		font-size: 1.4rem; 
+		text-align: left;
+		padding: 0; 
+		margin-bottom: 10px;
+	}
+	.bannerLb_tab .media-body h3{ 
+		font-size: 1.4rem; 
+		color: #fff; 
+		text-align: left;  
+		height: initial;
+		line-height: initial;
+		padding: 0 0 10px 0;
+	}
+	.bannerLb_tab .media-body p{ 
+		font-size: 1.2rem; 
+		text-align: left; 
+	}
+	.bannerLb_tab .lbLogin{
+		width: 300px;
+		padding: 15px;
+		background: rgba(0,0,0,0.3);
+	}
+
+	/*临时活动*/
+	.bannerActive{
+		/*background: rgba(255, 255, 255, 0.2);*/
+	}
+	.bannerActive h1{
+		font-size: 1.6rem;
+		text-align: left;
+		padding: 0; 
+		margin-bottom: 10px;
+	}
+	.bannerActive h2{
+		font-size: 1.2rem; 
+		color: #fff; 
+		text-align: left;  
+		height: initial;
+		line-height: initial;
+		padding: 0 0 5px 0;
+	}
+	.bannerActive  .path,
+	.bannerActive  .info{
+		display: table;
+	}
+	.bannerActive  .path span,
+	.bannerActive  .path div,
+	.bannerActive  .info span,
+	.bannerActive  .info div{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+
+	.bannerActive .path{
+		margin-top: 10px;
+	}
+	.bannerActive .path span{
+		color: rgb(255, 0, 0);
+		font-size: 1.6rem;
+	}
+	.bannerActive .path div{
+		padding: 0 5px;
+	}
+	.bannerActive .path a,
+	.bannerActive .info a{
+		padding: 3px 6px;
+		font-size: 1.4rem;
+		min-width: initial;
+	}
+
+	.bannerActive  .info{
+		margin-top: 10px;
+	}
+	.bannerActive .info .city{
+		margin-right: 10px;
+		font-size: 1.2rem;
+	}
+	.bannerActive .info div{
+		padding-left: 5px;
+	}
+
+
+
+
+/*关于我们*/
+	.aboutUs div.right div{
+		height: 40px;
+		line-height: 40px;
+	}
+	.aboutUs span.pic{
+		width: 20px;
+		/*height: auto;*/
+	}
+	.aboutUs strong{ padding-left: 15px; }
+	.aboutUs strong a,
+	.aboutUs strong:hover{ color: #056839; }
+	.aboutUs strong.qq{ position: relative; top: 5px;}
+	.aboutUs .more{ color: rgba(5,104,57,.8);  }
+	.aboutUs .more:hover{ color: rgba(5,104,57,1);  }
+	.indexContact-companyIntro{
+		font-size: 14px;
+		line-height: 2;
+		border: none;
+		padding: 5px 15px;
+		color: #333;
+		white-space: pre-wrap;
+	}
+
+/*核心优势	*/
+	.advantage .media{
+		border-top: 18px solid #d5d5d5;
+		padding-top: 5px;
+		color:#333;
+	}
+	.intro{
+		text-align: center;
+	}
+	.buyWrapper{
+		text-align: center;
+	}
+	.imgWrap1{
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		background-image: url(../img/new/countPirce.png);
+	}
+	.imgWrap2{
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		background-image: url(../img/new/queren.png);
+	}
+	.imgWrap3{
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		background-image: url(../img/new/hetong.png);
+	}
+	/*.imgWrap1:hover,.imgWrap2:hover,.imgWrap3:hover{
+		background-position: 80px;
+	}*/
+	.thumbLeft img{
+		height: 90px;
+		width: 90px;
+		margin-top: 32px;
+	}
+	.advantage .thumbnail{
+		border: none;
+		box-shadow: none;
+		background: #f6f6f6;
+		padding-top: 20px;
+	}
+	.advantage .thumbnail >div:nth-of-type(1){
+		text-align: center;
+		height: 70px;
+		line-height: 70px;
+	}
+	.advantage .thumbnail >div:nth-of-type(1) img{
+		max-width: 50px;
+		height: initial;
+	}
+
+/*三大保障*/
+	.secure .media{ padding: 0 20px;}
+	.secure .media-left { text-align: center; }
+	.secure .media-left img{ width: 90px; height: 90px; }
+	.secure .media-body{ width: initial; }
+	.secure .media-body h5{ font-size: 2rem; color: #056839; text-align: center; text-indent: initial; }
+/*价格费用*/
+	.priceItem{
+		padding-top: 10px;
+		padding-bottom: 30px;
+		text-align: center;
+		display: block;
+
+	}
+	.priceItem >div{
+		background: #fff;
+		border-radius: 3px;
+		/*box-shadow: 2px 2px 10px rgba(0,0,0,0.2),-2px -2px 10px rgba(0,0,0,0.2);*/
+		/*box-shadow: inset 0 0px 10px rgba(0,0,0,0.5);*/
+		/*box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+		/*box-shadow: 0 4px 23px 5px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.15);*/
+		transition: all 0.5s ease;
+		cursor: pointer;
+		border: 0.5px solid #eee;
+	}
+	.priceItem >div:hover{
+		background: rgb(246, 246, 246);
+		/*box-shadow: 0 4px 23px 5px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.15);*/
+    box-shadow: -1px -1px 50px rgba(0,0,0, 0.15), 1px -1px 50px rgba(0,0,0, 0.15);
+		border: 0.5px solid rgba(0, 0, 0, 0.15);
+	}
+	.priceItem >div >h2{
+		height: 80px;
+		line-height: 80px;		
+		background: rgba(252,176,64,1);
+		font-size: 2.2rem;
+		font-weight: 600;
+		color: #fff;
+		transition: all 0.5s ease;
+	}
+	.priceItem >div:hover >h2{
+		background: rgba(176, 123, 45, 1);
+	}
+	.priceItem >div >div.fee{
+		/*font: 22px/1.5 \5b8b\4f53,arial;*/
+		height: 50px;
+		line-height: 50px;
+		font-size: 30px;
+		font-weight: 600;
+	}
+	.priceItem >div >div.fee strong{
+		font-size: 20px;
+		color: #999;
+		font-weight: 400;
+		padding-right: 5px;
+	}
+	.priceItem >div >div.title{
+		height: 80px;
+		/*line-height: 40px;*/
+		font-size: 1.8rem;
+		padding: 20px 10px;
+	}
+	.priceItem >div >div.title a,
+	.priceItem >div >div.title a:hover{ color: #056839; }
+	.priceItem >div >p{
+		/*height: 40px;*/
+		line-height: 40px;
+		color: #666;
+		font-size: 1.6rem;
+		border-bottom: 1px solid #ddd;
+		margin-left: 15px;
+		margin-right: 15px;
+		/*overflow: hidden;*/
+	}
+	.priceItem >div >div.buy{ padding: 30px 0px 30px 0; position: relative; }
+
+	.priceItem .buy_layer{
+		width: 200px;
+		height: auto;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		-webkit-transform: translate(-50%, -100%);
+		-ms-transform: translate(-50%, -100%);
+		transform: translate(-50%, -100%);
+		
+		border: 3px solid #fcb040;
+
+		background: rgb(251,247,170);
+		color: rgb(162,125,53);
+		display: none;
+		box-shadow: 0 4px 23px 5px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.15);
+	}
+	.priceItem .buy_layer .content{
+		padding: 10px;
+	}
+	.priceItem .buy_layer .content i{
+		position: absolute;
+		left: 50%;
+		bottom: -19px;
+    transform: translateX(-50%);
+		border: 8px solid transparent;
+		border-top: 8px solid #fcb040;
+	}
+
+
+/*订单记录*/
+	.recodeTable{ width: 100%; border: 1px solid #ddd; }
+	.recodeThead,
+	.recodeTbody .recodeText >div{
+		width: 100%;
+		height: 50px;
+		line-height: 1.5;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		display: -ms-flexbox;
+
+		-webkit-box-pack: justify;
+		-webkit-box-align: center;
+
+		justify-content: space-around;	
+		align-items: center;
+
+	}
+	.recodeTbody .recodeText >div >div{
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+	.recodeThead{ 
+		border-bottom: 1px solid #ddd;
+		font-size: 1.6rem;
+		color: #333;
+		font-weight: 600;
+	}
+	.recodeThead >div,
+	.recodeTbody .recodeText div >div{
+		width: 20%;
+		text-align: center;
+		word-wrap: break-word;		/*允许长单词换行*/
+		word-break: break-all;	/*允许在单词内换行*/
+		/*word-break: keep-all;*/	/*只能在半角空格或连字符处换行*/
+	}
+	.recodeTbody{
+		width: 100%;
+		height: 200px; 
+		overflow: hidden; 
+		position: relative; 
+	}
+	.recodeBox{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.recodeTbody .recodeText >div:nth-of-type(odd)  { background-color: rgb(255,255,255); }
+	.recodeTbody .recodeText >div:nth-of-type(even) { background-color: rgb(248,248,248); }
+
+	.recodeTable{ color: #666; }
+	/*.recodeTbody .recodeText div >div:nth-of-type(3){flex: 1 1 100%;-webkit-box-flex: 1; }*/
+	.recodeTbody .recodeText div >div:nth-of-type(4){ color: #c81623; }
+	
+/*用户反馈*/
+	/*.feedback .media-left{ border: 1px solid #ddd; }*/
+	.feedback-row{
+		position: relative;
+		height: 440px;
+		overflow: hidden;
+	}
+	.feedback-content{
+		position: absolute;
+	}
+	.feedback .media{
+		height: 90px;
+	}
+	.feedback .media-left >div{
+		width: 100px;
+		text-align: center;
+	}
+	.feedback .media-left >div img{ height: auto; }
+	.feedback .media-body{
+		border-left: 0;
+		padding: 10px;
+	}
+
+	.media-body, .media-left, .media-right { display: block; }
+	.feedback .media-body{ width: initial; }
+	.feedback .media-left >div {margin: 0 auto;}
+	.feedback .media-left >div span{ font-size: 1.6rem; font-weight: 600; }
+
+		.feedback .media-body .left-quote,
+		.feedback .media-body .right-quote{
+			width: 16px;
+			height: 16px;
+		}
+		.feedback .media-body .text{
+			width: calc(100% - 30px);
+			-webkit-width: calc(100% - 30px);
+			padding-top: 15px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			/*height: 54px;*/
+		}
+		
+		.repStep .item{
+			padding: 0;
+			border: 1px solid red;
+		}
+		.repStepBox{
+			width: 380px;
+			height: 400px;
+			background: #fff;
+			position: relative;
+			margin: 0 auto;
+		}
+		.repStepBox .step{
+			position: absolute;
+			width: 30px;
+			height: 100%;
+		}
+		.repStepBox .step div{
+			position: absolute;
+			width: 30px;
+			height: 200px;
+			border: 3px solid #f2aa2a;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 52px 0;
+		}
+		.repStepBox .step div p{
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+		}
+		.repStepBox .desc{
+			position: absolute;
+			width: 50px;
+			height: 100%;
+			left: 40px;
+		}
+		.repStepBox .desc div{
+			position: absolute;
+			width: 50px;
+			height: 200px;
+			border: 3px solid #f2aa2a;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 37px 0;
+		}
+		.repStepBox .desc div p{
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			color: #008000;
+		}
+		.repStepBox .text{
+			position: absolute;
+			left: 100px;
+		}
+		.repStepBox .text .textCenter{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 200px;
+			height: 400px;
+			padding: 100px 10px;
+		}
+		.repStepBox .text .textCenter h6{
+			height: 30px;
+			line-height: 30px;
+			font-weight: 600;
+		}
+		.repStepBox .text .textCenter div{
+
+		}
+		.repStepBox .text .textCenter div p{
+			height: 20px;
+			line-height: 20px;
+		}
+
+/*用户反馈2*/
+	.feedback-table{ width: 100%; border: 1px solid #ddd; }
+	.feedback-thead,
+	.feedback-tbody .feedback-text >div{
+		width: 100%;
+		height: 50px;
+		line-height: 1.5;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		display: -ms-flexbox;
+
+		-webkit-box-pack: justify;
+		-webkit-box-align: center;
+
+		justify-content: space-around;	
+		align-items: center;
+
+	}
+	.feedback-tbody .feedback-text >div >div{
+		max-height: 40px;
+		line-height: 20px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		overflow: hidden;
+	}
+	.feedback-thead{ 
+		border-bottom: 1px solid #ddd;
+		font-size: 1.6rem;
+		color: #333;
+		font-weight: 600;
+	}
+	.feedback-thead >div,
+	.feedback-tbody .feedback-text div >div{
+		text-align: center;
+		word-wrap: break-word;		/*允许长单词换行*/
+		word-break: break-all;	/*允许在单词内换行*/
+		/*word-break: keep-all;*/	/*只能在半角空格或连字符处换行*/
+	}
+
+	.feedback-thead >div:nth-of-type(1),
+	.feedback-tbody .client{
+		-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+	}
+/*	.feedback-thead >div:nth-of-type(2),
+	.feedback-tbody .satisfication{
+		-webkit-box-flex: 0 0 120px;
+    -webkit-flex: 0 0 120px;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+	}*/
+	.feedback-thead >div:nth-of-type(3),
+	.feedback-tbody .evaluationScore{
+		-webkit-box-flex: 0 0 60px;
+    -webkit-flex: 0 0 60px;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+	}
+	.feedback-thead >div:nth-of-type(2),
+	.feedback-tbody .evaluationComment{
+		-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+	}
+
+	.feedback-tbody{
+		width: 100%;
+		height: 200px; 
+		overflow: hidden; 
+		position: relative; 
+	}
+	.feedback-box{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.feedback-tbody .feedback-text >div:nth-of-type(odd)  { background-color: rgb(255,255,255); }
+	.feedback-tbody .feedback-text >div:nth-of-type(even) { background-color: rgb(248,248,248); }
+
+	.feedback-table{ color: #666; }
+	/*.feedback-tbody .feedback-text div >div:nth-of-type(4){ color: #c81623; }*/
+
+
+/*没有小于768px，是因为bootstrap以移动端为优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+	@media (min-width: 370px) {
+		/*.bannerLb_tab{ top: 20%; }*/
+		/*.bannerBox img{ width: 250%; }*/
+		.bannerLb_tab .media-body h3{ font-size: 1.5rem; }
+		.advantage .media-left{text-align: center; }
+
+		.bannerActive h1{font-size: 1.8rem;}
+		.bannerActive h2{font-size: 1.4rem;}
+		.bannerActive .path a,
+		.bannerActive .info a{
+			font-size: 1.6rem;
+			padding: 3px 10px;
+		}
+		.bannerActive .path span{font-size: 1.8rem;}
+		.bannerActive .info .city{font-size: 1.4rem;}
+
+	}
+	@media (min-width: 768px) {
+		.secure .media{ border-right: 1px solid #056839;}
+		.secure .media-body h5{ font-size: 1.8rem; text-indent: 0em; }
+
+		/*.bannerLb_tab{ top: 10%; }*/
+		.bannerLb_tab .media-body{ width: 10000px; }
+		.bannerLb_tab .media-body h5{ font-size: 1.6rem; }
+		.bannerLb_tab .media-body h3{ font-size: 1.8rem; }
+		.bannerLb_tab .media-body p { font-size: 1.4rem; }
+
+
+		.bannerActive h1{font-size: 20px;}
+		.bannerActive h2{font-size: 14px;}
+		.bannerActive .path a,
+		.bannerActive .info a{
+			font-size: 14px;
+			padding: 6px 12px;
+			min-width: 100px;
+		}
+		.bannerActive .path span{font-size: 20px;}
+		.bannerActive .info .city{font-size: 14px;}
+		
+
+		.bannerBox img{ width: 130%; margin-left: 0; }
+		.secure .media-left { text-align: initial; }
+		.secure .media-body{ width: 10000px; }
+		.secure .media-body h5{ text-align: initial; }
+		/*.feedback .media-left >div{ width: 120px; }*/
+		.media-body, .media-left, .media-right { display: table-cell; }
+		.feedback .media-body{ width: 10000px; }
+		/*.feedback .media-left >div {margin: initial;}*/
+
+			.feedback-thead >div:nth-of-type(1),
+			.feedback-tbody .client{
+				-webkit-box-flex: 0 0 120px;
+		    -webkit-flex: 0 0 120px;
+		    -ms-flex: 0 0 120px;
+		    flex: 0 0 120px;
+			}
+		
+	}
+/* 中等屏幕（桌面显示器，大于等于992px） */
+	@media (min-width: 992px) {
+		.secure .media-body h5{ font-size: 1.8rem; text-indent: 1em; }
+		/*.bannerLb_tab{ top: 20%;}		*/
+		.bannerLb_tab .media-body h5{ font-size: 2rem; }
+		.bannerLb_tab .media-body h3{ font-size: 2.6rem;}
+		.bannerLb_tab .media-body p { font-size: 1.6rem; }
+
+		.bannerBox img{width: 110%;}
+		.bannerActive{padding-left: 50px;}
+		.bannerActive h1{font-size: 24px;}
+		.bannerActive h2{font-size: 16px;}
+		.bannerActive .path{margin-top: 20px;}
+		.bannerActive .path span{font-size: 24px;}
+		.bannerActive .info .city{font-size: 16px;}
+
+		.priceItem >div >h2{ font-size: 1.7rem }
+		.priceItem >div >div.title{ font-size: 1.7rem; }
+		.priceItem >div >p.lhHalf{ line-height: 20px; }
+
+		.indexQCode >div{
+			width: 150px;
+			height: 150px;
+		}
+		
+		/*.feedback .media-left >div {width: 200px;}*/
+	}
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+	@media (min-width: 1200px) {
+		.secure .media-body h5{ font-size: 1.8rem; text-indent: 2em; }
+		.bannerLb_tab .media-body h5{ font-size: 2rem; }
+		.bannerLb_tab .media-body h3{ font-size: 3.6rem; }
+		.bannerLb_tab .media-body p { font-size: 1.6rem; }
+		
+		.bannerBox img{width: 100%;}
+		.bannerActive h1{font-size: 30px; margin-bottom: 15px;}
+		.bannerActive h2{font-size: 16px;}
+		.bannerActive .path{margin-top: 30px;}
+		.bannerActive .path span{font-size: 30px;}
+		.bannerActive .path div{padding: 0 15px;}
+		.bannerActive .info .city{font-size: 16px;}
+		.bannerActive .info div{padding-left: 15px;}
+
+
+		.priceItem >div >h2{ font-size: 2rem }
+		.priceItem >div >div.title{ font-size: 1.8rem; }
+		.indexContact{
+			width: 26%;
+		}
+		.indexQCode{
+			width: 15%;
+		}
+		.priceItem{
+			width: 20%;
+		}
+
+	}
+	@media (min-width: 1400px) {
+		/*.priceItem >div >p.lhHalf{ line-height: 40px; }*/
+
+	}

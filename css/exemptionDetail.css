@@ -1,0 +1,98 @@
+.exemptionDetail table{ width: 100%; }
+.exemptionDetail table tr{
+	/*line-height: 50px;*/
+	min-height: 50px;
+	/*padding: 20px 0px;*/
+	word-wrap: break-word;		/*允许长单词换行*/
+	word-break: break-all;	/*允许在单词内换行*/
+	/*word-break: keep-all;*/	/*只能在半角空格或连字符处换行*/
+}
+.exemptionDetail table tr th{ 
+	min-width: 70px; 
+}
+.exemptionDetail table tr th,
+.exemptionDetail table tr td{
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+.exemptionDetail thead tr{
+	background-color: rgb(248,248,248);
+}	
+.exemptionDetail thead tr th{
+	padding: 10px 0;
+	font-size: 1.4rem;
+}
+
+.exemptionDetail tbody tr:nth-of-type(odd)  { background-color: rgb(245,245,245); }
+.exemptionDetail tbody tr:nth-of-type(even) { background-color: rgb(248,248,248); }
+.exemptionDetail tbody tr th,
+.exemptionDetail tbody tr td{
+	padding: 10px 0;
+}
+
+
+
+.exemptionDetail .tbody-footer th{
+	text-align: center;
+}
+
+
+.boss-word{
+	padding: 0 0 60px 0px;
+}
+.boss-word .company-name{
+	font-size: 1.8rem;
+	line-height: 40px;
+}
+.boss-word .text{
+	padding-left: 30px;
+}
+.boss-word .text p{
+	font-size: 1.6rem;
+	line-height: 30px;
+}
+
+/* 小屏幕（平板，大于等于768px） */
+	@media (min-width: 375px) {
+		.boss-word{
+			padding: 0 0 60px 20px;
+		}
+	}
+	@media (min-width: 768px) {
+		.exemptionDetail thead tr th{
+			font-size: 16px;
+			padding: 20px 0;
+		}
+		.exemptionDetail tbody tr td{
+			padding: 20px 0;
+		}
+
+		.boss-word{
+			padding: 0 0 60px 50px;
+		}
+		.boss-word .company-name{
+			font-size: 24px;
+			line-height: 40px;
+		}
+		.boss-word .text{
+			padding-left: 80px;
+		}
+		.boss-word .text p{
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+/* 中等屏幕（桌面显示器，大于等于992px） */
+	@media (min-width: 992px) {
+		.boss-word{
+			padding: 0 0 60px 70px;
+		}
+
+	}
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+	@media (min-width: 1200px) {
+		.boss-word{
+			padding: 0 0 60px 90px;
+		}
+	}

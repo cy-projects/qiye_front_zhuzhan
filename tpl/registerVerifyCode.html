@@ -1,0 +1,55 @@
+	<form action="" class="popupForm layer_pLh47" id="registerVerifyCodeFrom">
+		<div class="row layer_p">
+			<label class="col-sm-2">手机号</label>
+			<div class="col-sm-10">
+				<input  id="rvc_phone" type="text" placeholder="请输入手机号" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">图形验证码</label>
+			<div class="col-sm-10">
+				<input  id="rvc_captchaImageIpt" type="text" placeholder="请输入图形验证码" style="width: initial;">
+				<span class="rvc_captchaImageBox  pd42 pd22 captchaBox">
+					<img src="img/verify.png" alt="" class="rvc_captchaImage" title="点击刷新图片验证码">
+				</span>
+				<span class="va-b fs12 rvc_captchaImageChange captchaBoxChange">
+					看不清？
+					<a href="javascript:void(0);">换一张</a>
+				</span>
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="rvcSub" type="submit" value="提交" >
+			</div>
+		</div>
+	</form>
+
+	<form action="" class="popupForm layer_pLh47" id="findPwdVerifyFrom">
+		<div class="row layer_p">
+			<label class="col-sm-2">手机号</label>
+			<div class="col-sm-10">
+				<input  id="findPwd_phone" type="text" placeholder="请输入手机号" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">图形验证码</label>
+			<div class="col-sm-10">
+				<input  id="findPwd_captchaImageIpt" type="text" placeholder="请输入图形验证码" style="width: initial;">
+				<span class="findPwd_captchaImageBox  pd42 pd22 captchaBox">
+					<img src="img/verify.png" alt="" class="findPwd_captchaImage" title="点击刷新图片验证码">
+				</span>
+				<span class="va-b fs12 findPwd_captchaImageChange captchaBoxChange">
+					看不清？
+					<a href="javascript:void(0);">换一张</a>
+				</span>
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="findPwdVerifySub" type="submit" value="提交" >
+			</div>
+		</div>
+	</form>
